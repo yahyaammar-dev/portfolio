@@ -1,0 +1,44 @@
+.social{
+    .social__list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 25px;
+        right: 0;
+        .social__itemlink{
+            text-decoration: none;
+            color: $secondary-color;
+            padding-right: 30px;
+            .social__listitems{
+                display: inline;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .social{
+        .social__list{
+            .social__itemlink{
+                .social__listitems{
+                   font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 990px){
+    .social{
+        .social__list{
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            transform: translate(-50%, 0);
+        }
+    }
+}
+

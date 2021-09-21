@@ -1,0 +1,48 @@
+.introduction{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .introduction__heading{
+        font-weight: 900;
+        padding: 0;
+    }
+    .introduction__smallheading{
+        padding: 0;
+    }
+    .introduction__button{
+        width: 150px;
+        height: 40px;
+        background: $secondary-color;
+        color: $primary-color;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 575px){
+    .introduction{
+        padding: 15px;
+        .introduction__button{
+            font-size: 12px;
+            height: 25px;
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px){
+    .introduction{
+        text-align: center;
+        .introduction__button{
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
