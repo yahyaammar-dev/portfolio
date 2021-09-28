@@ -1,0 +1,53 @@
+.projects{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    .projects__imgoverlay{
+        flex: 0 0 60%;
+        .projects__mainimg{
+            max-width: 100%;
+        }
+    }
+    .projects__description{
+        text-align: right;
+        .projects__skillslist{
+            list-style-type: none;
+            .projects__skilllistitem{
+                padding: 5px;
+                display: inline;
+                pre{
+                    display: inline;
+                }
+            }
+        }
+        .projects__alert{
+            margin-left: -60px;
+            background-color: rgba($color: white, $alpha: 0.7);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects--right{
+    .projects__description{
+        text-align: left;
+        .projects__alertright{
+            margin-left: 0;
+            margin-right: -60px;
+        }
+        .projects__skillslist{
+            padding: 0;
+        }
+    }
+}
