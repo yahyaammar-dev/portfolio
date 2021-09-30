@@ -24,6 +24,13 @@
             margin-left: -60px;
             background-color: rgba($color: white, $alpha: 0.7);
         }
+        .projects__link{
+            color: white;
+            .projects__linkicon{
+                font-size: 20px;
+                padding: 5px;
+            }
+        }
     }
 }
 

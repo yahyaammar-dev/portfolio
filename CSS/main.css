@@ -7,6 +7,10 @@ body {
   color: #FDFCE5;
 }
 
+.zeroopacspacefiller {
+  opacity: 0;
+}
+
 .home {
   position: relative;
   height: 100vh;
@@ -25,6 +29,17 @@ body {
 
 @media screen and (max-width: 575px) {
   .about {
+    padding: 15px;
+  }
+}
+
+.contact {
+  position: relative;
+  height: 100vh;
+}
+
+@media screen and (max-width: 575px) {
+  .contact {
     padding: 15px;
   }
 }
@@ -137,6 +152,17 @@ body {
   font-size: 30px;
 }
 
+.social .social--listbottom {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
 @media screen and (max-width: 550px) {
   .social .social__list .social__itemlink .social__listitems {
     font-size: 16px;
@@ -202,6 +228,11 @@ body {
 .contactblock {
   margin: 40px;
   text-align: center;
+  border: 2px solid white;
+  padding: 50px;
+  margin: 0;
+  border-radius: 20px;
+  min-width: 260px;
 }
 
 .contactblock .contactblock__icon {
@@ -261,6 +292,15 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.projects .projects__description .projects__link {
+  color: white;
+}
+
+.projects .projects__description .projects__link .projects__linkicon {
+  font-size: 20px;
+  padding: 5px;
+}
+
 .projects--right .projects__description {
   text-align: left;
 }
@@ -272,5 +312,63 @@ body {
 
 .projects--right .projects__description .projects__skillslist {
   padding: 0;
+}
+
+.skillslist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+.skillslist .skillslist__one, .skillslist .skillslist__two, .skillslist .skillslist__three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skillslist--nostyle {
+  list-style-type: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo .logo__main {
+  font-weight: 500;
+  margin: 0;
+  font-size: 28px;
+}
+
+.aboutmemyself {
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills {
+  margin: 5rem 0;
 }
 /*# sourceMappingURL=main.css.map */

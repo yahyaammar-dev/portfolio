@@ -1,0 +1,12 @@
+.skillslist{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    .skillslist__one,.skillslist__two,.skillslist__three{
+        display: flex;
+    }
+}
+
+.skillslist--nostyle{
+    list-style-type: none;
+}
