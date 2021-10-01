@@ -11,6 +11,12 @@ body {
   opacity: 0;
 }
 
+@media screen and (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+}
+
 .home {
   position: relative;
   height: 100vh;
@@ -67,6 +73,9 @@ body {
 }
 
 @media screen and (max-width: 575px) {
+  .navigation {
+    margin: auto;
+  }
   .navigation .navigation__nav .navigation__list .navigation__linkitem .navigation__listitem {
     font-size: 10px;
   }
@@ -220,9 +229,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
+  height: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  align-items: center;
+  margin-top: 5rem;
 }
 
 .contactblock {
@@ -230,7 +241,7 @@ body {
   text-align: center;
   border: 2px solid white;
   padding: 50px;
-  margin: 0;
+  margin: 15px;
   border-radius: 20px;
   min-width: 260px;
 }
@@ -248,6 +259,22 @@ body {
 .contactblock .contactblock--button {
   height: 30px;
   width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .contactblock {
+    margin: 3rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .contact .social .social__list {
+    position: static;
+    text-align: center;
+    -webkit-transform: none;
+            transform: none;
+    padding: 40px 0;
+  }
 }
 
 .projects {
@@ -314,10 +341,44 @@ body {
   padding: 0;
 }
 
+@media screen and (max-width: 990px) {
+  .work .social .social__list {
+    position: static;
+    text-align: center;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .projects {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 2rem 0 5rem 0;
+  }
+  .projects .projects__imgoverlay .projects__mainimg {
+    width: 166%;
+    max-width: 166%;
+  }
+  .projects .projects__description .projects__alertright {
+    margin-right: 0;
+  }
+  .projects .projects__description .projects__alert {
+    margin: 0;
+  }
+  .projects--right .projects__description {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+}
+
 .skillslist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -358,6 +419,12 @@ header .logo .logo__main {
   font-size: 28px;
 }
 
+@media screen and (max-width: 500px) {
+  header .logo {
+    display: none;
+  }
+}
+
 .aboutmemyself {
   height: 75vh;
   display: -webkit-box;
@@ -366,6 +433,21 @@ header .logo .logo__main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 770px) {
+  .aboutmemyself {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .about .social .social__list {
+    position: static;
+    text-align: center;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .skills {

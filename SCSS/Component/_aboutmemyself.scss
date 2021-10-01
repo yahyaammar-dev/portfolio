@@ -3,3 +3,23 @@
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 770px){
+    .aboutmemyself{
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 990px){
+    .about{
+        .social{
+            .social__list{
+                position: static;
+                text-align: center;
+                transform: none;
+            }
+        }
+    }
+}

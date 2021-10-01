@@ -48,3 +48,47 @@
         }
     }
 }
+    
+
+@media screen and (max-width: 990px){
+    .work{
+        .social{
+            .social__list{
+                position: static;
+                text-align: center;
+                transform: none;
+            }
+        }
+    }
+}
+
+    
+
+@media screen and (max-width: 770px){
+    .projects{
+        flex-wrap: wrap;
+        margin: 2rem 0 5rem 0;
+        .projects__imgoverlay{
+            .projects__mainimg{
+                width: 166%;
+                max-width: 166%;
+            }
+        }    
+        .projects__description{
+            .projects__alertright{
+                margin-right: 0;
+            }
+            .projects__alert{
+                margin: 0;
+            }
+        }
+    }
+
+
+    .projects--right{
+        .projects__description{
+            order: 9;
+        }
+    }
+
+}

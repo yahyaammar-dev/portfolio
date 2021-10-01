@@ -1,5 +1,6 @@
 .skillslist{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 70%;
     .skillslist__one,.skillslist__two,.skillslist__three{

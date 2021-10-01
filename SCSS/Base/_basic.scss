@@ -8,3 +8,9 @@ body{
 .zeroopacspacefiller{
     opacity: 0;
 }
+
+@media screen and (max-width: 500px){
+    .logo{
+        display: none;
+    }
+}

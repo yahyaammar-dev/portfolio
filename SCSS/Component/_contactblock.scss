@@ -3,7 +3,7 @@
     text-align: center;
     border: 2px solid white;
     padding: 50px;
-    margin: 0;
+    margin: 15px;
     border-radius: 20px;
     min-width: 260px;
     .contactblock__icon{
@@ -19,3 +19,25 @@
         width: 100px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .contactblock{
+        margin: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 770px){
+    .contact{
+        .social{
+            .social__list{
+                position: static;
+                text-align: center;
+                transform: none;
+                padding: 40px 0;
+            }
+        }
+    }
+}
+
